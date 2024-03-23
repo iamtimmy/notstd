@@ -64,7 +64,7 @@
 #define NOTSTD_COLD_SCOPE
 #define NOTSTD_HOT              [[gnu::hot]]
 #define NOTSTD_HOT_SCOPE
-#define NOTSTD_CASTEXPRESSION   [[gnu::always_inline]]
+#define NOTSTD_CASTEXPRESSION   [[gnu::always_inline, nodiscard]]
 #elif NOTSTD_MSVC
 #define NOTSTD_INLINE           [[msvc::forceinline]]
 #define NOTSTD_NOINLINE         [[msvc::noinline]]
