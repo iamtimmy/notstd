@@ -1,0 +1,32 @@
+---
+Checks: '*,
+        -abseil-*,
+        -altera-*,
+        -android-*,
+        -fuchsia-*,
+        -google-*,
+        -llvm*,
+        -hicpp*,
+        -zircon-*,
+        -cppcoreguidelines-*,
+        -hicpp-uppercase-literal-suffix,
+        -misc-non-private-member-variables-in-classes,
+        -misc-use-anonymous-namespace,
+        -modernize-use-trailing-return-type,
+        -modernize-avoid-c-arrays,
+        -readability-else-after-return,
+        -readability-uppercase-literal-suffix,
+        -readability-identifier-length,
+        -readability-magic-numbers,
+        -easily-swappable-parameters,
+'
+
+WarningsAsErrors: ''
+HeaderFilterRegex: ''
+FormatStyle:     none
+
+
+
+
+
+

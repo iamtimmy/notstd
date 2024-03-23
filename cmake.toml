@@ -1,0 +1,14 @@
+[project]
+name = "notstd"
+languages = ["C", "CXX"]
+
+[target.notstd]
+type = "interface"
+compile-features = ["cxx_std_23"]
+include-directories = ["include"]
+
+[target.test]
+type = "executable"
+compile-features = ["cxx_std_23"]
+sources = ["test/*.cpp"]
+link-libraries = ["notstd"]
