@@ -4,6 +4,7 @@
 #include "integers.hpp"
 #include "hash.hpp"
 #include "constexpr.hpp"
+#include "placement_new.hpp"
 #include "defer.hpp"
 
 namespace notstd {

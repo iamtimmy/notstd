@@ -75,11 +75,11 @@ namespace notstd {
     template <class>
     inline constexpr bool is_lvalue_reference_v = false; // determine whether type argument is an lvalue reference
 
-    template <class _Ty>
-    inline constexpr bool is_lvalue_reference_v<_Ty&> = true;
+    template <class T>
+    inline constexpr bool is_lvalue_reference_v<T&> = true;
 
-    template <class _Ty>
-    struct is_lvalue_reference : bool_constant<is_lvalue_reference_v<_Ty>> {};
+    template <class T>
+    struct is_lvalue_reference : bool_constant<is_lvalue_reference_v<T>> {};
 
     template<class T>
     NOTSTD_CASTEXPRESSION constexpr T&& forward(remove_reference_t<T>&& param) noexcept {
